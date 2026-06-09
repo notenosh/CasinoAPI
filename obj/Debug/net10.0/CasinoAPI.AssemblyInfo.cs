@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CasinoAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7c57d52b42b975f8f9cac1e91d44dfbb72f55a4")]
 [assembly: System.Reflection.AssemblyProductAttribute("CasinoAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CasinoAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
