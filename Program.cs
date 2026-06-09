@@ -58,6 +58,15 @@ builder.Services.AddAuthorization();
 
 var app = builder.Build();
 
+// Create database and apply migrations
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider
+                  .GetRequiredService<CasinoDbContext>();
+
+    db.Database.Migrate();
+}
+
 // Swagger
 if (app.Environment.IsDevelopment())
 {
