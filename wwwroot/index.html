@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+<title>Casino</title>
+
+<link rel="stylesheet"
+      href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🎰 Casino 🎰</h1>
+
+<div class="card">
+
+    <h2>Login / Register</h2>
+
+    <input
+        type="email"
+        id="loginEmail"
+        placeholder="Email">
+
+    <input
+        type="password"
+        id="loginPassword"
+        placeholder="Password">
+
+    <button onclick="login()">
+        Login
+    </button>
+
+    <button onclick="registerUser()">
+        Register
+    </button>
+
+</div>
+
+<div class="card">
+
+    <h2>Player Dashboard</h2>
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Player Email"
+        readonly>
+
+    <input
+        type="number"
+        id="bet"
+        placeholder="Bet Amount"
+        value="100">
+
+    <button onclick="playSlot()">
+        🎰 Play Slot
+    </button>
+
+    <h3 id="balance">
+        Balance: ₹0
+    </h3>
+
+</div>
+
+<div class="card">
+
+    <h2>Slot Result</h2>
+
+    <div id="reels"
+         class="reels">
+
+        🎰 🎰 🎰
+
+    </div>
+
+    <div id="result">
+
+        Waiting for spin...
+
+    </div>
+
+</div>
+
+<div class="card">
+
+    <h2>Game History</h2>
+
+    <table id="historyTable">
+
+        <thead>
+
+            <tr>
+                <th>Game</th>
+                <th>Bet</th>
+                <th>Win/Loss</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+    </table>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
